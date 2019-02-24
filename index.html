@@ -11,9 +11,10 @@
 	<title>Inspire</title>
 </head>
 
-<body id="bg-image">
+<body>
+	<div id="bg-image"></div>
+
 	<div id="weather">
-		Your Weather Template
 	</div>
 
 	<div id="quote">
@@ -21,7 +22,6 @@
 	</div>
 
 	<div>
-		A Todo List
 		<div id="todo-error"></div>
 		<form onsubmit="app.controllers.todoController.addTodo(event)">
 			<input type="text" name="description" placeholder="New Task">
