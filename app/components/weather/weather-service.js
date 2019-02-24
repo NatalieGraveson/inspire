@@ -35,4 +35,8 @@ export default class WeatherService {
 			_setState('weather', new Weather(res.data))
 		})
 	}
+
+
+
+
 }
