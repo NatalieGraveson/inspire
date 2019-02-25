@@ -10,16 +10,18 @@ export default class Weather {
     this.temp = data.temp || ((data.main.temp - 273.15) * (9 / 5) + 32).toFixed(2)
   }
 
-  //convert(kelvin) {
-  //  this.kelvin = - 273.15
-  // return this.kelvin
-  // console.log(this.kelvin)
-  //}
+
 
   get Template() {
     return `
-    <h2>location:${this.city}<h2>
-    <h2>temp:${this.temp}</h2>
+    <div class="card-transparent text-white special-card">
+    <div class="card-body">
+    <h5 class="card-title">${this.city}</h5>
+    <i class="fas fa-temperature-high"
+    <h5>${this.temp}</h5>
+    </i>
+  </div>
+</div>
   `
   }
 

@@ -10,8 +10,7 @@ export default class Quote {
 
   get Template() {
     return `
-    ${this.body}
-    ${this.author}
+    ${this.body}&nbsp-${this.author}
     `
   }
 }

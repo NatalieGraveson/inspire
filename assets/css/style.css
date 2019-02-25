@@ -9,9 +9,47 @@
 
 img{
   position: fixed; 
-   background-size: cover; 
+   background-size: contain; 
    z-index: -1; 
    min-width: 100%;
    min-height: 100%;
   
+}
+footer:hover {
+  color:white; 
+   text-shadow: 2px 2px black;
+}
+
+ footer {
+  color:transparent; 
+  margin-top: 540px;
+  text-align: center;
+  font-family: 'Courgette', cursive;
+  font-size: 35px;
+  margin-bottom: 21px;
+
+ } 
+ 
+ #temp {
+   display:flex;
+  justify-content: flex-end;
+ }
+ .special-card {
+   background-color: #020202a1;
+    opacity: 1.4;
+ }
+.sweet-card {
+width: fit-content;
+outline-color: white
+}
+.style-it {
+  font-size: 11px;
+}
+
+ h5 {
+    font-size: 15px;
+}
+#tasks {
+  color: white;
+  text-shadow: 4px 4px black;
 }

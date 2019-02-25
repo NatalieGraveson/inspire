@@ -20,16 +20,9 @@ function _drawError() {
 
 function draw() {
 	let numOfTasks = _todoService.numTodo
-	document.getElementById('tasks').innerHTML = numOfTasks
+	document.getElementById('tasks').innerHTML = numOfTasks + ' ' + 'item to do'
 }
-//function _drawsubmit() {
-//	let template = `
-//	< form onsubmit = "app.controllers.todoController.addTodo(event)" >
-//			<input type="text" name="description" placeholder="New Task">
-//			<button type="submit">create</button>
-//			<h5>you have ${this.tasks} task to complete</h5>
 
-//	</form>
 
 
 
