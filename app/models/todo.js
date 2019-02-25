@@ -5,7 +5,6 @@ export default class Todo {
     this.description = data.description
     this._id = data._id
     this.completed = data.completed
-    this.tasks = 0
   }
 
 
@@ -13,7 +12,7 @@ export default class Todo {
 
   getTemplate() {
     return `
-   <div class="card" style="width: 18rem;">
+   <div class="card-transparent">
   <div class="card-body">
     <h5 class="card-title ${this.completed ? 'strikeout' : ''} " >${this.description}</h5>
     <div class="custom-control custom-checkbox">

@@ -18,6 +18,10 @@ function _drawError() {
 	//document.querySelector('#todo-error').textContent = `${_todoService.TodoError.message}`
 }
 
+function draw() {
+	let numOfTasks = _todoService.numTodo
+	document.getElementById('tasks').innerHTML = numOfTasks
+}
 //function _drawsubmit() {
 //	let template = `
 //	< form onsubmit = "app.controllers.todoController.addTodo(event)" >
@@ -35,7 +39,8 @@ export default class TodoController {
 		_todoService.addSubscriber('error', _drawError)
 		_todoService.getTodos()
 		_todoService.addSubscriber('todos', _drawTodos)
-
+		_todoService.addSubscriber('todos', draw)
+		_todoService.numTodo
 
 
 		// Don't forget to add your subscriber

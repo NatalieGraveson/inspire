@@ -25,6 +25,10 @@ export default class TodoService {
 		return _state.error
 	}
 
+	get numTodo() {
+		return _state.todos.length
+	}
+
 	get todo() {
 		return _state.todos
 	}
@@ -49,6 +53,7 @@ export default class TodoService {
 			.then(res => {
 				this.getTodos()
 				// WHAT DO YOU DO AFTER CREATING A NEW TODO?
+
 			})
 			.catch(err => _setState('error', err.response.data))
 	}
