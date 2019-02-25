@@ -3,6 +3,7 @@ export default class Quote {
     this.qotd_date = data.qotd_date
     this.url = data.url
     this.body = data.body
+    this.author = data.author
   }
 
 
@@ -10,6 +11,7 @@ export default class Quote {
   get Template() {
     return `
     ${this.body}
+    ${this.author}
     `
   }
 }

@@ -5,7 +5,11 @@ export default class Todo {
     this.description = data.description
     this._id = data._id
     this.completed = data.completed
+    this.tasks = 0
   }
+
+
+
 
   getTemplate() {
     return `
@@ -20,4 +24,5 @@ export default class Todo {
   </div >
 </div > `
   }
+
 }

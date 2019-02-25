@@ -24,7 +24,6 @@ function _setState(prop, data) {
 export default class QuoteService {
 
 	get quotes() {
-		debugger
 		return _state.quotes
 	}
 

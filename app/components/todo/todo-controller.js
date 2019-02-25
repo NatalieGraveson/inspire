@@ -18,12 +18,26 @@ function _drawError() {
 	//document.querySelector('#todo-error').textContent = `${_todoService.TodoError.message}`
 }
 
+//function _drawsubmit() {
+//	let template = `
+//	< form onsubmit = "app.controllers.todoController.addTodo(event)" >
+//			<input type="text" name="description" placeholder="New Task">
+//			<button type="submit">create</button>
+//			<h5>you have ${this.tasks} task to complete</h5>
+
+//	</form>
+
+
+
 
 export default class TodoController {
 	constructor() {
 		_todoService.addSubscriber('error', _drawError)
 		_todoService.getTodos()
 		_todoService.addSubscriber('todos', _drawTodos)
+
+
+
 		// Don't forget to add your subscriber
 	}
 

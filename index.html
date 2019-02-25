@@ -17,17 +17,19 @@
 	<div id="weather">
 	</div>
 
-	<div id="quote">
-		The Quote
-	</div>
 
 	<div>
-		<div id="todo-error"></div>
-		<form onsubmit="app.controllers.todoController.addTodo(event)">
-			<input type="text" name="description" placeholder="New Task">
-			<button type="submit">create</button>
+		<div id="todo-error">
+			<form onsubmit="app.controllers.todoController.addTodo(event)">
+				<input type="text" name="description" placeholder="New Task">
+				<button type="submit">create</button>
+				<h5 id="tasks"></h5>
 
-		</form>
+			</form>
+		</div>
+
+
+
 		<div id="todos">
 
 		</div>
@@ -36,9 +38,12 @@
 	<div id="temp">
 	</div>
 
+	<div id="span"></div>
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
 	<script type="module" src="app/main.js"></script>
 </body>
+<footer id="quote"></footer>
 
 </html>
 <html>
