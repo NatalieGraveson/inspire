@@ -10,8 +10,8 @@ class App {
     this.controllers = {
       weatherController: new WeatherController(),
       todoController: new TodoController(),
-      imageController: new ImageController(), s
-      quoteController: new QuoteController(),
+      imageController: new ImageController(),
+      quoteController: new QuoteController()
     }
   }
 }
