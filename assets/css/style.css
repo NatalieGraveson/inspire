@@ -22,11 +22,13 @@ footer:hover {
 
  footer {
   color:transparent; 
-  margin-top: 540px;
   text-align: center;
   font-family: 'Courgette', cursive;
   font-size: 35px;
-  margin-bottom: 21px;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
 
  } 
  
@@ -37,6 +39,7 @@ footer:hover {
  .special-card {
    background-color: #020202a1;
     opacity: 1.4;
+        margin-bottom: 10px;
  }
 .sweet-card {
 width: fit-content;

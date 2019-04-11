@@ -20,7 +20,7 @@ function _drawError() {
 
 function draw() {
 	let numOfTasks = _todoService.numTodo
-	document.getElementById('tasks').innerHTML = numOfTasks + ' ' + 'item to do'
+	document.getElementById('tasks').innerHTML = numOfTasks + ' ' + 'items to do'
 }
 
 
